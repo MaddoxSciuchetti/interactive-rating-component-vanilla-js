@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&family=League+Spartan:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Overpass", sans-serif;
+    font-size: 16px;
+}
+
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 100%, 100%);
+    --Grey-500: hsl(217, 12%, 63%);
+    --Grey-900: hsl(213, 19%, 18%);
+    --Grey-950: hsl(216, 12%, 8%);
+}
+
+body{
+
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+.card-component-main{
+
+    display: flex;
+    flex-direction: column;
+    border: solid black;
+    display: flex;
+    width: 20.5%;
+    height: 18em;
+    padding: 1.5em;
+    background-color: var(--Grey-500);
+    background: linear-gradient(var(--Grey-900), var(--Grey-950));
+    border-radius: 1.5em;
+
+}
+
+
+
+.card-information{
+    color: white;
+
+
+}
+
+.star-img{
+    width: 2em;
+    height: 2em;
+
+    border-radius: 10em;
+    padding: .7em;
+    background-color: var(--Grey-900);
+}
+
+.thankyou-img{
+    width: 3em;
+    height: 3em;
+}
+
+.How-did-we-do{
+    font-size: 1.3em;
+    margin-top: 1em;
+    color: white;
+}
+
+.How-did-we-do-paragraph{
+    font-weight: 400; 
+    color: var(--Grey-500);
+    font-size: .7em;
+    margin-top: .5em;
+
+}
+
+.card-numbering{
+    display: flex;
+    border-radius: 3;
+    margin-top: 1em;
+    justify-content: center;
+    gap: 1.1em;
+}
+
+.number-button{
+
+    cursor: pointer;
+    border: none;
+    color: var(--Grey-500);
+    font-weight: 100;
+    font-size: .8em;
+    width: 3em;
+    height: 3em;
+
+    border-radius: 20rem;
+    color: white;
+    background-color: var(--Grey-900);
+}
+
+.number-button:hover{
+    background-color: var(--Orange);
+}
+
+.number-button:active{
+    background-color: var(--White);
+    color: black;
+}
+
+.number-button:focus{
+    background-color: var(--White);
+    color: black;
+}
+
+.submit-button{
+    font-size: .8em;
+    width: 100%;
+    outline: none;
+    border: none;
+    text-align: center;
+    margin-top: 2em;
+    background-color: var(--Orange);
+    border-radius: 2em;
+    padding: .5rem;
+    cursor: pointer;
+    font-weight: 700;
+
+}
+
+.submit-button:hover{
+    background-color: var(--White);
+    color: black
+
+
+}
+
+/* active classes for switching pages */
+
+
+    /* thank you card */
+
+.card-thankyou {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    align-items: center;
+    height: 20em;
+    display: none;
+
+}
+
+.card-thankyou.active{
+    display: block;
+}
+
+.card-thankyou img{
+    width: 9em;
+    height: 6em;
+    margin-top: 1em;
+}
+
+.card-thankyou .output{
+
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5em;
+    width: 60%;
+    font-size: .8em;
+    border-radius: 1em;
+    color: var(--Orange);
+    background-color: var(--Grey-900);
+    padding: .2em;
+}
+
+.card-thankyou  .rating-out-of{
+    font-size: 1em;
+}
+
+.card-thankyou .thankyou-header{
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+.card-thankyou .thankyou-text{
+    font-size: .8em;
+    margin-top: .5em;
+    font-weight: 200;
+    color: var(--Grey-500)
+}
+
+.card-thankyou  .card-component-main{
+    width: 22%;
+    height: 25em;
+}
+
+
+
+
+
+
+
+    /* rating card  */
+
+.rating-card.active{
+    display: none;
+}
+
+
+.card-component-main-information.active{
+    display: none;
+}
+
+
+@media(max-width: 375px){
+
+    body{
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+    
+    .card-component-main{
+
+    display: flex;
+    flex-direction: column;
+    border: solid black;
+    display: flex;
+    width: 90%;
+    background-color: var(--Grey-500);
+    background: linear-gradient(var(--Grey-900), var(--Grey-950));
+    border-radius: 1.5em;
+}
+
+.card-thankyou {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    align-items: center;
+    height: 20em;
+    display: none;
+
+}
+
+.card-thankyou.active{
+    display: block;
+}
+
+
+
+}
+
+
+
+/* thank you page */
+
+
+
+
+
